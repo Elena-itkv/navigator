@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Цифровой навигатор</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo/1.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1 class="logo"> <img src="img/logo/1.png" class="logo1"> <a href="index.html"> Первые на связи!</a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html" class="active">Цифровой навигатор</a></li>
+                    <li><a href="pervye.html">Первичное отделение</a></li>
+                    <li><a href="events.html">Полезная информация</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="project.html">Проекты</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Full-screen Slider -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('img/slider/2.jpg');">
+                    
+                </div>
+                <div class="slide" style="background-image: url('img/slider/1.jpg');">
+                    <div class="slide-caption">
+                        <h2>Цифровой навигатор</h2>
+                        <p>Узнайте, как принять участие в проектах</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('img/slider/3.jpg');">
+
+                    <div class="slide-caption">
+                        <h2>Наша миссия:</h2>
+                        <p>Быть с Россией, быть человеком, быть вместе, быть в движении, быть первыми</p>
+                    </div>
+                </div>
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <!-- Cybersecurity Cards -->
+       
+        <!-- FAQ Accordion -->
+        <section class="faq-section container">
+            <h2>О платформе</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3> Где найти информацию о нашей команде и руководстве?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Переходи в раздел «Первичное отделение». Там ты познакомишься с Председателем совета, активистами нашего отделения и узнаешь о наших ценностях и миссии.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Как не пропустить интересное событие в нашем колледже?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Регулярно проверяй раздел «Новости». Мы публикуем там отчеты о прошедших акциях и анонсы предстоящих встреч. Также рекомендуем подписаться на наше сообщество во ВКонтакте.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Я хочу участвовать в конкурсе. Где мне подать заявку?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Тебе нужен раздел «Проекты». Там представлен список актуальных активностей. Выбери проект, нажми на кнопку «Участвовать», и сайт перенаправит тебя на официальную страницу регистрации.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Где я могу узнать информацию о Движении Первых?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>В разделе «Полезная информация». Там ты найдешь актуальную информацию.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+       
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; Первые на связи! Все права защищены.</p>
+            <div class="social-links">
+                <a href="https://vk.com/club234343146"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Card Detail Modal -->
+    <div id="card-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Детальное изображение">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+   
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="code.js"></script>
+</body>
+</html>
